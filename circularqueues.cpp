@@ -123,4 +123,14 @@ public :
 int main()
 {
     Queues q;
+    char ch;
+
+    while (true)
+    {
+        try
+        {
+            cout << "Menu" << endl;
+            cout << "1. Implement insert option" << endl;
+        }
+    }
 }
