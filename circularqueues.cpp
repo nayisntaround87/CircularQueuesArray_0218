@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class queues 
+class Queues 
 {
 private :
     static const int max = 3;
@@ -9,7 +9,7 @@ private :
     int queue_array[max];
 
 public :
-    queues() 
+    Queues() 
     {
         FRONT = -1;
         REAR = -1;
@@ -20,5 +20,16 @@ public :
         int num;
         cout << "enter a number: ";
         cin >> num;
+        cout << endl;
     }
+
+    //Cek apakah antrian penuh
+    if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
+    {
+        cout << "\nQueue overflow\n";
+        return;
+    }
+
+    //Cek apakah antrian kosong
+
 };
