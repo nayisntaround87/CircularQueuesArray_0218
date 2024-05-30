@@ -74,7 +74,27 @@ public :
 
    void display()
    {
-    int FRONT 
+    int FRONT_position = FRONT;
+    int REAR_position = REAR;
+
+    //cek apakah antrian kosong
+    if (FRONT_position == -1)
+    {
+        cout << "Queue is empty\n";
+        return;
+    }
+    cout << "\nElements in the queue are...\n";
+
+    //jika FRONT <= REAR, iterasi dari FRONT hingga REAR
+    if (FRONT_position <= REAR_position)
+    {
+        while (FRONT_position <= REAR_position)
+        {
+            cout << queue_array[FRONT_position] << " ";
+        }
+    }
+
+
    }
 
 };
