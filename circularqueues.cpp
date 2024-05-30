@@ -3,5 +3,22 @@ using namespace std;
 
 class queues 
 {
-    private :
+private :
+    static const int max = 3;
+    int FRONT, REAR;
+    int queue_array[max];
+
+public :
+    queues() 
+    {
+        FRONT = -1;
+        REAR = -1;
+    }
+
+    void insert()
+    {
+        int num;
+        cout << "enter a number: ";
+        cin >> num;
+    }
 };
